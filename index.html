@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet" />
+  <script src="app.js" type="text/javascript"></script>
+  <title>My Currency App</title>
+</head>
+<body onload="javascript:getCurrency('CAD','INR','1','0');">
+<div class="container">
+  <h2 class="ttl">CURRENCY CONVERTER 2017</h2>
+<div class="box">
+  
+<table class="tbl" cellpadding="4" cellspacing="4">
+<tr><td >
+<table class="tbl" cellpadding="4" cellspacing="4">
+<tr>
+<td><input type="number" id="currentxt1" class="inp" placeholder=" CAD" value="1" /></td>
+<td>
+<select class="slt" id="curren1">
+<option value="">SELECT</option>
+<option value="AUD">Australian dollar</option>
+<option value="BGN">Bulgarian lev</option>
+<option value="BRL">Brazilian real</option>
+<option value="CAD" selected="selected">Canadian dollar</option>
+<option value="CHF">Swiss franc</option>
+<option value="CNY">Chinese yuan renminbi</option>
+<option value="CZK">Czech koruna</option>
+<option value="DKK">Danish krone</option>
+<option value="GBP">Pound sterling</option>
+<option value="HKD">Hong Kong dollar</option>
+<option value="HRK">Croatian kuna</option>
+<option value="HUF">Hungarian forint</option>
+<option value="IDR">Indonesian rupiah</option>
+<option value="ILS">Israeli shekel</option>
+<option value="INR">Indian rupee</option>
+<option value="JPY">Japanese yen</option>
+<option value="KRW">South Korean won</option>
+<option value="MXN">Mexican peso</option>
+<option value="MYR">Malaysian ringgit</option>
+<option value="NOK">Norwegian krone</option>
+<option value="NZD">New Zealand dollar</option>
+<option value="PHP">Philippine peso</option>
+<option value="PLN">Polish zloty</option>
+<option value="RON">Romanian leu</option>
+<option value="RUB">Russian rouble</option>
+<option value="SEK">Swedish krona</option>
+<option value="SGD">Singapore dollar</option>
+<option value="THB">Thai baht</option>
+<option value="TRY">Turkish lira</option>
+<option value="USD">US dollar</option>
+<option value="ZAR">South African rand</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<input type="number" class="inp" id="currentxt2" placeholder=" INR" value="0" />
+</td>
+<td>
+<select class="slt" id="curren2">
+<option value="">SELECT</option>
+<option value="AUD">Australian dollar</option>
+<option value="BGN">Bulgarian lev</option>
+<option value="BRL">Brazilian real</option>
+<option value="CAD">Canadian dollar</option>
+<option value="CHF">Swiss franc</option>
+<option value="CNY">Chinese yuan renminbi</option>
+<option value="CZK">Czech koruna</option>
+<option value="DKK">Danish krone</option>
+<option value="GBP">Pound sterling</option>
+<option value="HKD">Hong Kong dollar</option>
+<option value="HRK">Croatian kuna</option>
+<option value="HUF">Hungarian forint</option>
+<option value="IDR">Indonesian rupiah</option>
+<option value="ILS">Israeli shekel</option>
+<option value="INR" selected="selected">Indian rupee</option>
+<option value="JPY">Japanese yen</option>
+<option value="KRW">South Korean won</option>
+<option value="MXN">Mexican peso</option>
+<option value="MYR">Malaysian ringgit</option>
+<option value="NOK">Norwegian krone</option>
+<option value="NZD">New Zealand dollar</option>
+<option value="PHP">Philippine peso</option>
+<option value="PLN">Polish zloty</option>
+<option value="RON">Romanian leu</option>
+<option value="RUB">Russian rouble</option>
+<option value="SEK">Swedish krona</option>
+<option value="SGD">Singapore dollar</option>
+<option value="THB">Thai baht</option>
+<option value="TRY">Turkish lira</option>
+<option value="USD">US dollar</option>
+<option value="ZAR">South African rand</option>
+</select>
+</td>
+</tr>
+</table>
+</td>
+
+<td style="vertical-align:bottom;">
+<input type="button" class="btn" value="CONVERT" onClick="javascript:getCurrency(document.getElementById('curren1').value,document.getElementById('curren2').value,document.getElementById('currentxt1').value,document.getElementById('currentxt2').value);"/>
+</td>
+</tr>
+<tr>
+  <td colspan="3" align="center">
+   <span id="txt"></span>
+  </td>
+  
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
